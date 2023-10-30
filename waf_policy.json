@@ -5,7 +5,7 @@
        "description" : "This policy is for export and for use in AS3",
        "enablePassiveMode" : false,
        "enforcementMode" : "blocking",
-       "fullPath" : "/Common/AWAF_POLICY_1",
+       "fullPath" : "/Common/AWAF_POLICY_2",
        "name" : "AWAF_POLICY_1",
        "protocolIndependent" : false,
        "server-technologies" : [
