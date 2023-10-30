@@ -1,0 +1,218 @@
+{
+    "policy" : {
+       "applicationLanguage" : "auto-detect",
+       "caseInsensitive" : true,
+       "description" : "This policy is for export and for use in AS3",
+       "enablePassiveMode" : false,
+       "enforcementMode" : "blocking",
+       "fullPath" : "/Common/AWAF_POLICY_1",
+       "name" : "AWAF_POLICY_1",
+       "protocolIndependent" : false,
+       "server-technologies" : [
+          {
+             "serverTechnologyName" : "ASP"
+          },
+          {
+             "serverTechnologyName" : "Apache Tomcat"
+          },
+          {
+             "serverTechnologyName" : "IIS"
+          },
+          {
+             "serverTechnologyName" : "Java Servlets/JSP"
+          },
+          {
+             "serverTechnologyName" : "Microsoft Windows"
+          },
+          {
+             "serverTechnologyName" : "Nginx"
+          },
+          {
+             "serverTechnologyName" : "Node.js"
+          }
+       ],
+       "signature-sets" : [
+          {
+             "alarm" : true,
+             "block" : true,
+             "learn" : true,
+             "name" : "Java Servlets/JSP Signatures (High/Medium Accuracy)",
+             "signatureSet" : {
+                "filter" : {
+                   "accuracyFilter" : "ge",
+                   "accuracyValue" : "medium",
+                   "hasCve" : "all",
+                   "lastUpdatedFilter" : "all",
+                   "riskFilter" : "all",
+                   "riskValue" : "all",
+                   "signatureType" : "all",
+                   "tagFilter" : "all",
+                   "userDefinedFilter" : "all"
+                },
+                "systems" : [
+                   {
+                      "name" : "Java Servlets/JSP"
+                   }
+                ],
+                "type" : "filter-based"
+             }
+          },
+          {
+             "alarm" : true,
+             "block" : true,
+             "learn" : true,
+             "name" : "Apache Tomcat Signatures (High/Medium Accuracy)",
+             "signatureSet" : {
+                "filter" : {
+                   "accuracyFilter" : "ge",
+                   "accuracyValue" : "medium",
+                   "hasCve" : "all",
+                   "lastUpdatedFilter" : "all",
+                   "riskFilter" : "all",
+                   "riskValue" : "all",
+                   "signatureType" : "all",
+                   "tagFilter" : "all",
+                   "userDefinedFilter" : "all"
+                },
+                "systems" : [
+                   {
+                      "name" : "Apache Tomcat"
+                   }
+                ],
+                "type" : "filter-based"
+             }
+          },
+          {
+             "alarm" : true,
+             "block" : true,
+             "learn" : true,
+             "name" : "Microsoft Windows Signatures (High/Medium Accuracy)",
+             "signatureSet" : {
+                "filter" : {
+                   "accuracyFilter" : "ge",
+                   "accuracyValue" : "medium",
+                   "hasCve" : "all",
+                   "lastUpdatedFilter" : "all",
+                   "riskFilter" : "all",
+                   "riskValue" : "all",
+                   "signatureType" : "all",
+                   "tagFilter" : "all",
+                   "userDefinedFilter" : "all"
+                },
+                "systems" : [
+                   {
+                      "name" : "Microsoft Windows"
+                   }
+                ],
+                "type" : "filter-based"
+             }
+          },
+          {
+             "alarm" : true,
+             "block" : true,
+             "learn" : true,
+             "name" : "IIS Signatures (High/Medium Accuracy)",
+             "signatureSet" : {
+                "filter" : {
+                   "accuracyFilter" : "ge",
+                   "accuracyValue" : "medium",
+                   "hasCve" : "all",
+                   "lastUpdatedFilter" : "all",
+                   "riskFilter" : "all",
+                   "riskValue" : "all",
+                   "signatureType" : "all",
+                   "tagFilter" : "all",
+                   "userDefinedFilter" : "all"
+                },
+                "systems" : [
+                   {
+                      "name" : "IIS"
+                   }
+                ],
+                "type" : "filter-based"
+             }
+          },
+          {
+             "alarm" : true,
+             "block" : true,
+             "learn" : true,
+             "name" : "ASP Signatures (High/Medium Accuracy)",
+             "signatureSet" : {
+                "filter" : {
+                   "accuracyFilter" : "ge",
+                   "accuracyValue" : "medium",
+                   "hasCve" : "all",
+                   "lastUpdatedFilter" : "all",
+                   "riskFilter" : "all",
+                   "riskValue" : "all",
+                   "signatureType" : "all",
+                   "tagFilter" : "all",
+                   "userDefinedFilter" : "all"
+                },
+                "systems" : [
+                   {
+                      "name" : "ASP"
+                   }
+                ],
+                "type" : "filter-based"
+             }
+          },
+          {
+             "alarm" : true,
+             "block" : true,
+             "learn" : true,
+             "name" : "Node.js Signatures (High/Medium Accuracy)",
+             "signatureSet" : {
+                "filter" : {
+                   "accuracyFilter" : "ge",
+                   "accuracyValue" : "medium",
+                   "hasCve" : "all",
+                   "lastUpdatedFilter" : "all",
+                   "riskFilter" : "all",
+                   "riskValue" : "all",
+                   "signatureType" : "all",
+                   "tagFilter" : "all",
+                   "userDefinedFilter" : "all"
+                },
+                "systems" : [
+                   {
+                      "name" : "Node.js"
+                   }
+                ],
+                "type" : "filter-based"
+             }
+          },
+          {
+             "alarm" : true,
+             "block" : true,
+             "learn" : true,
+             "name" : "Nginx Signatures (High/Medium Accuracy)",
+             "signatureSet" : {
+                "filter" : {
+                   "accuracyFilter" : "ge",
+                   "accuracyValue" : "medium",
+                   "hasCve" : "all",
+                   "lastUpdatedFilter" : "all",
+                   "riskFilter" : "all",
+                   "riskValue" : "all",
+                   "signatureType" : "all",
+                   "tagFilter" : "all",
+                   "userDefinedFilter" : "all"
+                },
+                "systems" : [
+                   {
+                      "name" : "Nginx"
+                   }
+                ],
+                "type" : "filter-based"
+             }
+          }
+       ],
+       "softwareVersion" : "16.1.3",
+       "template" : {
+          "name" : "POLICY_TEMPLATE_FUNDAMENTAL"
+       },
+       "type" : "security"
+    }
+ }
+ 
